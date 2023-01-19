@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+const apiKey = process.env.CHATGPT_KEY;
 
 const quotePrompt = "Give me a random productivity quote";
 const taskPrompt =
@@ -14,7 +15,7 @@ function Productivity() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${YOUR_API_KEY}`,
+          Authorization: `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
           prompt: quotePrompt,
@@ -26,7 +27,7 @@ function Productivity() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${YOUR_API_KEY}`,
+          Authorization: `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
           prompt: taskPrompt,
