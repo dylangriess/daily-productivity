@@ -48,9 +48,9 @@ function Productivity() {
   }, []);
 
   return (
-    <div>
-      <p>{quote}</p>
-      <p>{task}</p>
+    <div className="productivity-container">
+      <p className="productivity-quote">{quote}</p>
+      <p className="productivity-task">{task}</p>
     </div>
   );
 }
