@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 const apiKey = process.env.CHATGPT_KEY;
+import "./Productivity.css";
 
 const quotePrompt = "Give me a random productivity quote";
 const taskPrompt =
