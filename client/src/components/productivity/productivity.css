@@ -4,15 +4,17 @@
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
 }
-
 .productivity-quote {
   font-size: 2rem;
   text-align: center;
   color: blue;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
-
 .productivity-task {
   font-size: 1.5rem;
   text-align: center;
   color: green;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
