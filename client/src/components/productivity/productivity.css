@@ -4,3 +4,9 @@
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
 }
+
+.productivity-quote {
+  font-size: 2rem;
+  text-align: center;
+  color: blue;
+}
