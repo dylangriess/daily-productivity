@@ -66,7 +66,9 @@ function Productivity() {
       {isTaskComplete ? (
         <button onClick={handleNewTask}>New Task</button>
       ) : (
-        <button onClick={handleCompleteTask}>Complete Task</button>
+        <button className="complete-button" onClick={handleCompleteTask}>
+          Complete Task
+        </button>
       )}
     </div>
   );
