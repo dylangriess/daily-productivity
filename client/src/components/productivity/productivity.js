@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import "./productivity.css";
 const apiKey = process.env.CHATGPT_KEY;
-import "./Productivity.css";
 
 const quotePrompt = "Give me a random productivity quote";
 const taskPrompt =
@@ -9,6 +9,17 @@ const taskPrompt =
 function Productivity() {
   const [quote, setQuote] = useState("");
   const [task, setTask] = useState("");
+
+  const [isTaskComplete, setIsTaskComplete] = useState(false);
+
+  function handleCompleteTask() {
+    setIsTaskComplete(true);
+  }
+
+  function handleNewTask() {
+    setIsTaskComplete(false);
+    // Fetch a new task and quote from the API
+  }
 
   useEffect(() => {
     Promise.all([
