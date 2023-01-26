@@ -63,6 +63,11 @@ function Productivity() {
     <div className="productivity-container">
       <p className="productivity-quote">{quote}</p>
       <p className="productivity-task">{task}</p>
+      {isTaskComplete ? (
+        <button onClick={handleNewTask}>New Task</button>
+      ) : (
+        <button onClick={handleCompleteTask}>Complete Task</button>
+      )}
     </div>
   );
 }
